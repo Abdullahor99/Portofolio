@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Capriola"
+    />
+    <link rel="stylesheet" href="css/helpclasses.css" />
+    <link rel="stylesheet" href="css/styleguide.css" />
+    <link rel="stylesheet" href="css/allgemein.css" />
+    <link rel="stylesheet" href="css/styleindex.css" />
+    <script src="https://kit.fontawesome.com/f0e3796fee.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Home</title>
+    <style>
+      :root {
+        --i: 0;
+        --mar-r: 10px;
+        --pad-r: 0;
+        --pad-l: 0;
+        --mar-l: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wraper">
+      <header class="header">
+          <a href="#" id="open" onclick="showHideNav()">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <nav id="header__nav">
+            <ul class="flex f-col navi-ul">
+              <li><a class="active fa-sharp fa-solid fa-house-chimney" href="#home" title="Home" id="homeicon"></a></li>
+
+              <li><a class="inactive fa-solid fa-person" href="#aboutme" title="About me" id="aboutmeicon"></a></li>
+
+              <li><a class="inactive fa-solid fa-briefcase" href="#mywork" title="My Projects" id="myworkicon"></a></li>
+
+              <li><a class="inactive fa-solid fa-address-book" href="#contact" 
+              title="Say Hello :)" id="contacticon"></a></li>
+
+            </ul>
+          </nav>
+        </header>
+      <div class="main-profile-info view active__view" id="home">
+        <div class="flex-cont">
+          <div class="spalte1">
+            <div id="_i" class="center-flex">
+              <p>I</p>
+            </div>
+            <div id="with" class="center-flex">
+              <p>with</p>
+            </div>
+          </div>
+          <div class="spalte2">
+            <div id="profile" class="txt-center center-xy">
+              <div class="h1">
+                <p class="txt-center">hello 👋 I'm</p>
+                <div class="animation">
+                  <div class="first">
+                    <div>abdullah</div>
+                  </div>
+                  <div class="second">
+                    <div>web developer</div>
+                  </div>
+                </div>
+              </div>
+              <figure class="profile-img">
+                <img
+                  src="img/abdullah.png"
+                  alt="Abdullah's image"
+                  width="200"
+                  height="200"
+                />
+                <img
+                  src="img/abdullahsmall.png"
+                  alt="small Abdullah"
+                  width="200"
+                  height="200"
+                />
+                <figcaption class="hidden-elem">Profile imge</figcaption>
+              </figure>
+              <a class="button waviy" href="#contact">
+                <span style="--i: 1">C</span>
+                <span style="--i: 2">o</span>
+                <span style="--i: 3">n</span>
+                <span style="--i: 4">t</span>
+                <span style="--i: 5">a</span>
+                <span style="--i: 6">c</span>
+                <span style="--i: 7">t</span>
+              </a>
+            </div>
+          </div>
+          <div class="spalte3">
+            <div id="play" class="center-flex">
+              <p>Play</p>
+            </div>
+            <div id="creativity" class="center-flex">
+              <p>Creativity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main>
+        <section class="aboutme view inactive__view" id="aboutme">
+          <h2>About me</h2>
+          <p class="aboutme__P-1">
+            Hi, i'm Abdullah nice to meet you. I'm a passionate web developer
+            based in Dortmund. I enjoy developing Websites and cooking something
+            after a hard workout. After my Trainee as a Programmer i wanted to
+            improve my knowledge on the Web through a Fullstack Kurs which i'm
+            doing until the end of mars 2023.
+          </p>
+          <p class="aboutme__p-2">
+            I have a strong foundation in front-end development, with a focus on HTML, CSS, and JavaScript. I also have experience working with back-end technologies such as PHP and MySQL. I am constantly striving to improve my skills and stay up-to-date with the latest technologies. Over the next few months, I plan to focus on learning more advanced technologies such as Sass, frameworks (Angular/React), and Laravel. I am also interested in learning more about content management systems such as Typo3
+          </p>
+          <p class="aboutme__p-3">
+            I am excited to use my skills and passion to create beautiful and functional websites that not only meet  the needs of my clients, but also exceed their expectations.
+          </p>
+          <a class="cool-link" id="aboutme__info-link" href="">
+            <span id="aboutme__info-link-text">More info</span>
+            <span id="aboutme__info-link-icon" class="fa-solid fa-caret-down"></span>
+          </a> 
+        </section>
+        <section class="mywork view inactive__view" id="mywork">
+          <h2 class="my-work__header"> My portofolio</h2>
+          <div class="Projects flex">
+            <div class="project1" 
+            onmouseover="showMoreInfo('project1')" onmouseout="showLessInfo('project1')">
+              <figure class="project1__figure">
+                <img class="project1__imge" src="img/placeimg_400_600_nature.jpg" alt="">
+                <figcaption class="project1__description center-xy">
+                  <h1 class="project1__header center-xy">Tranier Richtig</h1>
+                  <p class="project1__summary hidden-elem">Demo Fittnes Company to learn HTML & CSS.</p>
+                  <a class="project1__visit-link hidden-elem" href="#">Vist Website</a>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="project2" onmouseover="showMoreInfo('project2')" onmouseout="showLessInfo('project2')">  
+              <figure class="project2__figure">
+                  <img class="project2__imge" src="img/placeimg_400_600_nature.jpg" alt="">
+                  <figcaption class="project2__description center-xy">
+                  <h1 class="project2__header center-xy">Rating App</h1>
+                  <p class="project2__summary hidden-elem">Demo Rating App to learn PHP & SQL.</p>
+                  <a class="project2__visit-link hidden-elem" href="#">Vist Website</a>
+                </figcaption>
+              </figure>
+          </div>
+        </section>
+        <section class="contact-me view inactive__view" id="contact">
+          <h2>Contact me</h2>
+          <p class="contact__p-1">i'm interstid and exited to find a new job opportunity</p>
+          <form class="mar-l mar-r" id="form">
+            <input
+              type="text"
+              class="feedback-input"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="feedback-input col-50"
+              id="email"
+              placeholder="Email"
+              required
+              onblur="isvalidEmail()"
+            />
+            <input
+              type="text"
+              class="feedback-input col-100"
+              id="subject"
+              placeholder="Subject"
+            />
+            <textarea
+              name="message"
+              class="feedback-input col-100"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              onblur="isvalidMessage()"
+              required
+            ></textarea>
+            <button type="submit" class="button waviy">
+              <span style="--i: 1">S</span>
+              <span style="--i: 2">e</span>
+              <span style="--i: 3">n</span>
+              <span style="--i: 4">d</span>
+              <span style="--i: 5"></span>
+              <span style="--i: 6">i</span>
+              <span style="--i: 7">t</span>
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="js/scribt.js"></script>
+    <script src="js/clientValidation.js"></script>
+    <script src="js/jQuery.js"></script>
+  </body>
+</html>

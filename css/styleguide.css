@@ -1,0 +1,49 @@
+/* varibelen  */
+:root {
+  /* farben */
+  --color1: #1d1d1d;
+  --color2: #c1bdba;
+  --color3: #5dafff;
+  --color4: #eff4f3;
+  /* ********************************** */
+  --col: 0px;
+  /* ************************************/
+  /* margin & padding */
+  --mar-l: 0;
+  --mar-r: 0;
+  --pad-r: 0;
+  --pad-l: 0;
+}
+
+/* ********************************** */
+/* !Knownrules */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+nav ul li a {
+  text-align: center;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  display: inline-block;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.contatct-cont{
+  min-width: 800px;
+  margin: 0 auto;
+  background-color: red;
+}
+

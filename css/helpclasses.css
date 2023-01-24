@@ -1,0 +1,211 @@
+/* ! *********************************************************************** */
+/* !HILFKLASSEN BEREICH  */
+
+/* Abstands hilfsklassen */
+.mar-l {
+  margin-left: var(--mar-l);
+}
+.mar-r {
+  margin-right: var(--mar-r);
+}
+.pad-l {
+  padding-left: var(--pad-l);
+}
+.pad-r {
+  padding-right: var(--pad-r);
+}
+
+/* hilfkalssen breiten */
+.col-16 {
+  --col: 16.6666667%;
+  width: var(--col);
+}
+.col-33 {
+  --col: 33.3333%;
+  width: var(--col);
+}
+.col-50 {
+  --col: 50%;
+  width: var(--col);
+}
+.col-66 {
+  --col: 66.6666667%;
+  width: var(--col);
+}
+.col-84 {
+  --col: 83.3333%;
+  width: var(--col);
+}
+.col-100 {
+  --col: 100%;
+  width: var(--col);
+}
+.col-25 {
+  --col: 25%;
+  width: var(--col);
+}
+.col-75 {
+  --col: 75%;
+  width: var(--col);
+}
+
+/* !berchnen hilfklassen um die breite an zupassen egal wie der Margin und der Padding gesetzt wird */
+/* margin fall */
+[class*="col-"].mar-r {
+  width: calc(var(--col) - var(--mar-r));
+}
+[class*="col-"].mar-l {
+  width: calc(var(--col) - var(--mar-l));
+}
+[class*="col-"].mar-r.mar-l {
+  width: calc(var(--col) - var(--mar-l) - var(--mar-r));
+}
+
+/* padding fall */
+[class*="col-"].pad-r {
+  width: calc(var(--col) - var(--pad-r));
+}
+[class*="col-"].pad-l {
+  width: calc(var(--col) - var(--pad-l));
+}
+[class*="col-"].pad-l.pad-r {
+  width: calc(var(--col) - var(--pad-l) - var(--pad-r));
+}
+/* margin right und padding right fall */
+[class*="col-"].mar-r.pad-r {
+  width: calc(var(--col) - var(--mar-r) - var(--pad-r));
+}
+[class*="col-"].mar-r.pad-l {
+  width: calc(var(--col) - var(--mar-r) - var(--pad-l));
+}
+/* margin left und padding left fall */
+[class*="col-"].mar-l.pad-r {
+  width: calc(var(--col) - var(--mar-l) - var(--pad-r));
+}
+[class*="col-"].mar-l.pad-l {
+  width: calc(var(--col) - var(--mar-l) - var(--pad-l));
+}
+/* dreier fälle */
+[class*="col-"].mar-l.mar-r.pad-l {
+  width: calc(var(--col) - var(--mar-l) - var(--pad-l) - var(--mar-r));
+}
+[class*="col-"].mar-l.mar-r.pad-r {
+  width: calc(var(--col) - var(--mar-l) - var(--pad-l) - var(--mar-r));
+}
+[class*="col-"].mar-l.pad-r.pad-l {
+  width: calc(var(--col) - var(--mar-l) - var(--pad-l) - var(--pad-r));
+}
+[class*="col-"].mar-r.pad-r.pad-l {
+  width: calc(var(--col) - var(--mar-r) - var(--pad-l) - var(--pad-r));
+}
+/* alle vier zusammen fall */
+[class*="col-"].mar-r.mar-l.pad-r.pad-l {
+  width: calc(
+    var(--col) - var(--mar-r) - var(--pad-l) - var(--pad-r) - var(--mar-l)
+  );
+}
+
+/* ! Flexbox hilfsklassen */
+/* Klassen für Felxcontanier  */
+.flex {
+  display: flex;
+}
+/* Spalten mit erlaubten umbruch*/
+.f-wrap {
+  flex-wrap: wrap;
+}
+.f-row {
+  flex-direction: row;
+}
+.f-col {
+  flex-direction: column;
+}
+/* Klasse nur am kinderelement des Flexcnotainers setzen */
+.grow {
+  flex-grow: 1;
+}
+
+/* !Floats hilfsklassen */
+.fl-l {
+  float: left;
+}
+.fl-r {
+  float: right;
+}
+
+/* Clears*/
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* !Feature / Utility classes */
+/* verstecken */
+.hide-offset {
+  position: absolute;
+  left: -9999em;
+}
+
+.hidden-elem {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hide-size {
+  max-height: 1px;
+  max-width: 1px;
+  overflow: hidden;
+}
+
+.show {
+  left: auto;
+  max-height: max-content;
+  max-width: max-content;
+  overflow: visible;
+}
+
+/* Bilder skalierbar */
+.scale {
+  width: 100%;
+  height: auto;
+}
+
+.inl-block {
+  display: inline-block;
+}
+.txt-center {
+  text-align: center;
+}
+
+.center-xy {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer-sm-y {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.spacer-md-y {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.spacer-lg-y {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* !Hilfklassen Bereich Ende*/
