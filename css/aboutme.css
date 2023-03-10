@@ -50,6 +50,7 @@
 .contact__p-1,
 .aboutme__p-2,
 .aboutme__p-3 {
+  font-size: 3rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
   line-height: 3.3rem;

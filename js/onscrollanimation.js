@@ -123,8 +123,8 @@ mywork.add(() => {
 const contactme = gsap.timeline({
   scrollTrigger: {
     trigger: ".contactme",
-    start: "top top",
-    end:  "bottom bottom",
+    start: "top 80%",
+    end: "bottom bottom",
   }
 });
 
