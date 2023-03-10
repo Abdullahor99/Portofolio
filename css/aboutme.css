@@ -1,0 +1,133 @@
+.aboutme__header{
+  height: 7vh;
+}
+
+.aboutme-h2,
+.mywork-h2,
+.contactme-h2{
+  opacity: 0; 
+  font-size: 4rem;
+  margin-left: 2rem;
+  padding-top: 3rem;
+}
+.aboutme-main-cont
+{
+  width: 80%;
+  margin: 0 auto;
+  height: 93vh;
+}
+
+.aboutme__content{
+  align-items: center;
+  flex-direction: row;
+}
+.aboutme__texts-cont{
+  opacity: 0;
+  transform: translateX(-500%);
+  width: 60%;
+  margin: 1rem 0;
+}
+.small-screen,
+.small-screen .aboutme__imge{
+  height: 0px;
+  display: none;
+}
+.aboutme__imge-div{
+  display: flex;
+  transform: translateX(-500%);
+  flex-grow: 1;
+  opacity: 0;
+  width: 40%;
+  height: 60vh;
+  justify-content: center;
+}
+.aboutme__imge{
+  height: 100%;
+  width: 70%;
+}
+
+.aboutme__P-1,
+.contact__p-1,
+.aboutme__p-2,
+.aboutme__p-3 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 3.3rem;
+  word-spacing: 0.7rem;
+}
+
+  
+
+@media only screen and (min-width: 100px) and (max-width: 550px) {
+
+  .aboutme__P-1,
+  .aboutme__p-2,
+  .aboutme__p-3{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-bottom: 3rem;
+  }
+  .aboutme__imge{
+    width: 7rem;
+    height: 20rem;
+  }
+  .aboutme__texts-cont{
+    margin: 1rem 0 0 1rem;
+    width: 70%;
+  }
+  .aboutme__imge-div{
+    align-items: flex-start;
+    height: 30vh;
+    width: 20%;
+  }
+  .aboutme-main-cont{
+    position: relative;
+    height: 93vh;
+    display: block;
+    width: calc(100% - 5.6rem);
+    margin: 0 0 0 0;
+  }
+  .aboutme__content{
+    align-items: flex-start;
+  }
+  .aboutme__p-2,
+  .aboutme__p-3{
+    width: 90vw;
+  }
+  .aboutme-h2{
+    margin-left: 1rem;
+    font-size: 2.7rem;
+    letter-spacing: -0.2rem;
+  }
+  
+}
+
+@media only screen and (min-width: 50px) and (max-width: 300px)
+{
+  .aboutme__imge-div,
+  .aboutme__imge{
+    display: none;
+  }
+  
+  .aboutme__P-1,
+  .aboutme__p-2,
+  .aboutme__p-3{
+    width: 85vw;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1200px){
+  .aboutme-h2{
+    margin-left: 1rem;
+    font-size: 2.7rem;
+    letter-spacing: -0.2rem;
+  }
+  .aboutme__P-1,
+  .aboutme__p-2,
+  .aboutme__p-3{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-bottom: 3rem;
+  }
+}

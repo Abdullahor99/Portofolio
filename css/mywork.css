@@ -1,0 +1,159 @@
+.mywork__header{
+  height: 7vh;
+}
+.mywork__main,
+.contactme__main{
+  flex-direction: column;
+  width: 100vw;
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mywork-text-1{
+  opacity: 0;
+  transform: translateX(-50vw);
+  font-size: 2.5rem;
+  max-width: fit-content;
+  margin: 3rem auto;
+}
+.mywork-text-2{
+  opacity: 0;
+  /* transform: translateY(30vh); */
+  display: block;
+  max-width: fit-content;
+  margin: 3rem auto;
+}
+.Projects {
+  width: 70vw;
+  max-height: 60vh;
+  margin: 0 auto;
+}
+.project1{
+  transform: translateX(-50vw);
+}
+.project2{
+  transform: translateX(50vw);
+}
+.project1,
+.project2 {
+  opacity: 0;
+  width: 45%;
+  height: 100%;
+  margin: 1rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 25% / 25%;
+}
+
+.project1__figure,
+.project2__figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.project2__imge,
+.project1__imge {
+  height: 100%;
+  width: 100%;
+  border-radius: 25% / 25%;
+  filter: grayscale(50%) opacity(50%);
+  transition: all 0.2s ease;
+}
+
+.project1__visit-link,
+.project2__visit-link {
+  background-color: var(--color3);
+  color: var(--color1);
+  text-align: center;
+  display: block;
+  height: 3rem;
+  width: 15rem;
+  margin: 2rem;
+  line-height: 3rem;
+  border: solid 1px transparent;
+  border-radius: 1.5rem;
+}
+
+.project1__header,
+.project2__header {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.project2__summary,
+.project1__summary {
+  color: var(--color4);
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  line-height: 1.9rem;
+}
+
+.project1:hover .project1__imge,
+.project2:hover .project2__imge {
+  filter: grayscale(10%) opacity(60%);
+  scale: 1.009;
+  transition: all 1s ease;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 550px) {
+  .mywork-h2{
+    margin-left: 1rem;
+    font-size: 2.7rem;
+    letter-spacing: -0.2rem;
+  } 
+  
+  .mywork__main {
+    align-items: unset;
+    justify-content: unset;
+    height: 85vh;
+  }
+  
+  .mywork-text-1,
+  .mywork-text-2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 90%;
+  }
+  
+  .Projects {
+    width: 70vw;
+    max-height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project1,
+  .project2 {
+    width: 100%;
+    height: 40%;
+    margin: 1rem 0;
+  }
+  
+  .project1__figure,
+  .project2__figure {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1200px){
+  .mywork-h2{
+    margin-left: 1rem;
+    font-size: 2.7rem;
+    letter-spacing: -0.2rem;
+  } 
+  .mywork-text-1,
+  .mywork-text-2 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 90%;
+  }
+}

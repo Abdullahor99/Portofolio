@@ -1,0 +1,145 @@
+.flex-cont {
+  display: flex;
+  height: 100%;
+}
+
+.spalte1,
+.spalte2,
+.spalte3{
+  text-align: center;
+  width: 33.33333333%
+}
+
+#_i {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.iletter,
+.withword{
+  transform: translateX(-500%);
+}
+
+
+.playword,
+.creativityword{
+  transform: translateX(-500%);
+}
+
+.iletter,
+.withword,
+.playword,
+.creativityword{
+  opacity: 0;
+}
+
+#with {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+#play {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+#creativity {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+@supports(-webkit-background-clip: text) or (background-clip: text) {
+  #creativity p {
+    color: transparent;
+    background-image: linear-gradient(90deg, var(--color3), var(--color4));
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.spalte2 {
+  height: 100%;
+  position: relative;
+}
+
+#profile {
+  width: 100%;
+  max-height: 30.1rem;
+  margin: auto 0;
+}
+
+.spalte2__h1{
+  letter-spacing: -0.2rem;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  color: var(--color2);
+}
+
+.profile-img-figure {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  display: inline-block;
+  margin-top: 0.3rem;
+  margin-bottom: 0.9rem;
+}
+
+.profile-img{
+  border-radius: 50%;
+  position: absolute;
+  height: 20rem;
+  width: 20rem;
+  top: 0;
+  left: 0;
+}
+
+.profile-img-figure img:last-of-type {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.25s;
+}
+
+.profile-img-figure:hover img:last-of-type {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+  .spalte1,
+  .spalte3{
+    width: 20%;
+  }
+  .spalte2{
+    width: 60%;
+  }
+  .spalte2__h1{
+    font-size: 1.3rem;
+    letter-spacing: -0.1rem;
+  }
+  .main-profile-info{
+    width: 99%;
+  }
+  .creativityword{
+    margin-right: 2rem;
+  }
+  
+  .profile-img,
+  .profile-img-figure{
+    width: 10rem;
+    height: 10rem;
+  }
+  .button{
+    height: 2rem;
+    width: 8rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  #home p{
+      font-size: 1.3rem;
+  }
+
+}
