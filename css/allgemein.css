@@ -3,6 +3,8 @@ html {
   font-family: "Capriola", sans-serif;
   font-size: 62.5%;
   line-height: 1.5em;
+  
+  /* sicher?????????????????' */
   box-sizing: content-box;
 }
 
@@ -34,7 +36,11 @@ body {
   right: 0%;
   z-index: 1;
 }
-
+.social-network-cont {
+  position: absolute;
+  top: 1rem;
+  left: 0%;
+}
 h1,
 h2,
 h3,

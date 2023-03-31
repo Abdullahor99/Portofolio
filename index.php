@@ -23,7 +23,7 @@
       <header class="header">
           <a href="" id="open">
             <div class="hamburger">
-              <span></span>
+              <span></span> 
               <span></span>
               <span></span>
             </div>
@@ -42,6 +42,26 @@
             </ul>
           </nav>
         </header>
+        <div class="social-network-cont">
+          <ul class="flex">
+
+              <li>
+                <a class= "social-network-github fa-brands fa-github"  href="https://github.com/?q=ph">
+                </a>
+              </li>
+
+              <li>
+                <a class= "social-network-gmail fa-solid fa-envelope"  href="#">
+                </a>
+              </li>
+
+              <li>
+                <a class= "social-network-xing fa-brands fa-xing"  href="##s">
+                </a>
+              </li>
+          </ul>
+
+        </div>
       <div class="main-profile-info view" id="home">
         <div class="flex-cont">
           <div class="spalte1">
@@ -266,7 +286,7 @@
         </main>
         
       </section>
-    </div>
+    </didiv>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
