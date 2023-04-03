@@ -35,11 +35,32 @@ body {
   top: 0;
   right: 0%;
   z-index: 1;
+ 
 }
 .social-network-cont {
   position: absolute;
   top: 1rem;
   left: 0%;
+  z-index: 1;
+  width: 12rem;
+  margin-left: 1.2rem;
+}
+.social-network-cont ul{
+  justify-content: space-around;
+}
+.social-network-cont li{
+  height: 2.4rem;
+  width: 2.4rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+.social-network-cont a{
+  scale: 1.5;
+  color: var(--color2);
+}
+.social-network-cont a:hover{
+  scale: 1.6;
+  transition: all 0.1s ease;
 }
 h1,
 h2,

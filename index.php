@@ -46,17 +46,17 @@
           <ul class="flex">
 
               <li>
-                <a class= "social-network-github fa-brands fa-github"  href="https://github.com/?q=ph">
+                <a class= "social-network-github fa-brands fa-github"  href="https://github.com/?q=ph" title="Sehen Sie sich mein Profil auf Github an." target="_blank">
                 </a>
               </li>
 
               <li>
-                <a class= "social-network-gmail fa-solid fa-envelope"  href="#">
+                <a class= "social-network-gmail fa-solid fa-envelope"  href="mailto:abdullah.orabi999@gmail.com">
                 </a>
               </li>
 
               <li>
-                <a class= "social-network-xing fa-brands fa-xing"  href="##s">
+                <a class= "social-network-xing fa-brands fa-xing"  href="https://www.xing.com/profile/Abdullah_Orabi5/cv" target="_blank">
                 </a>
               </li>
           </ul>
