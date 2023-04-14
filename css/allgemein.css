@@ -1,9 +1,8 @@
-
 html {
   font-family: "Capriola", sans-serif;
   font-size: 62.5%;
   line-height: 1.5em;
-  
+
   /* sicher?????????????????' */
   box-sizing: content-box;
 }
@@ -25,7 +24,7 @@ body {
 .mywork,
 .contactme {
   height: 100vh;
-  width: 100%;  
+  width: 100%;
 }
 
 .header {
@@ -35,9 +34,9 @@ body {
   top: 0;
   right: 0%;
   z-index: 1;
- 
 }
 .social-network-cont {
+  display: none;
   position: absolute;
   top: 1rem;
   left: 0%;
@@ -45,20 +44,20 @@ body {
   width: 12rem;
   margin-left: 1.2rem;
 }
-.social-network-cont ul{
+.social-network-cont ul {
   justify-content: space-around;
 }
-.social-network-cont li{
+.social-network-cont li {
   height: 2.4rem;
   width: 2.4rem;
   line-height: 2.2rem;
   text-align: center;
 }
-.social-network-cont a{
+.social-network-cont a {
   scale: 1.5;
   color: var(--color2);
 }
-.social-network-cont a:hover{
+.social-network-cont a:hover {
   scale: 1.6;
   transition: all 0.1s ease;
 }
@@ -69,7 +68,7 @@ h4,
 h5,
 h6 {
   color: var(--color3);
-  line-height: 3rem
+  line-height: 3rem;
 }
 
 nav {
@@ -95,8 +94,7 @@ nav a.active {
   scale: 1.5;
 }
 
-@supports(-webkit-background-clip: text) or (background-clip: text) {
-
+@supports (-webkit-background-clip: text) or (background-clip: text) {
   nav a.active,
   .header__nav-icon:hover,
   .header__nav-icon:focus-within {
@@ -181,43 +179,46 @@ nav {
 }
 
 .bouncing {
-  animation : rubberband 800ms alternate ease-out;
+  animation: rubberband 800ms alternate ease-out;
 }
 .bouncing-op {
-  animation : rubberband 1s alternate ease-out, op 1s ease-out;
+  animation: rubberband 1s alternate ease-out, op 1s ease-out;
   /* animation: ; */
 }
-.bouncy{
+.bouncy {
   display: inline-block;
 }
 
 @keyframes op {
-  0%{ opacity: 0;}
-  100% {opacity: 1;}
-  
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes rubberband {
-    0%{
-        transform: scaleX(1);
-    }
-    40%{
-        transform: scaleX(1.12) scaleY(0.75);
-    }
-    55%{
-        transform: scaleX(0.85) scaleY(1);
-    }
-    65%{
-        transform: scaleX(1.09) scaleY(0.85);
-    }
-    75%{
-        transform: scaleX(0.9)  scaleY(1);
-    }
-    90%{
-        transform: scaleX(1.05) scaleY(0.95);
-    }
-    100%{
-        transform: scaleX(1) scaleY(1);
-    }
+  0% {
+    transform: scaleX(1);
+  }
+  40% {
+    transform: scaleX(1.12) scaleY(0.75);
+  }
+  55% {
+    transform: scaleX(0.85) scaleY(1);
+  }
+  65% {
+    transform: scaleX(1.09) scaleY(0.85);
+  }
+  75% {
+    transform: scaleX(0.9) scaleY(1);
+  }
+  90% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
 }
 
 .button {
@@ -252,7 +253,6 @@ nav {
 }
 
 @keyframes waviy {
-
   0%,
   40%,
   100% {
@@ -268,25 +268,22 @@ nav {
   display: none;
 }
 
-
 @media only screen and (min-width: 250px) and (max-width: 600px) {
-
-  .hamburger{
+  .hamburger {
     scale: 0.9;
   }
   nav ul li {
-    font-size: 1.7rem
+    font-size: 1.7rem;
   }
   #open,
-  #close{
+  #close {
     width: 3rem;
   }
-  .navi-ul{
+  .navi-ul {
     width: 3rem;
   }
-  .header{
+  .header {
     /* background-color: red; */
     width: 3rem;
   }
-  
 }
