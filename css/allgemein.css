@@ -23,7 +23,6 @@ body {
 .aboutme,
 .mywork,
 .contactme {
-  height: 100vh;
   width: 100%;
 }
 
@@ -35,6 +34,7 @@ body {
   right: 0%;
   z-index: 1;
 }
+
 .social-network-cont {
   display: none;
   position: absolute;
@@ -44,23 +44,28 @@ body {
   width: 12rem;
   margin-left: 1.2rem;
 }
+
 .social-network-cont ul {
   justify-content: space-around;
 }
+
 .social-network-cont li {
   height: 2.4rem;
   width: 2.4rem;
   line-height: 2.2rem;
   text-align: center;
 }
+
 .social-network-cont a {
   scale: 1.5;
   color: var(--color2);
 }
+
 .social-network-cont a:hover {
   scale: 1.6;
   transition: all 0.1s ease;
 }
+
 h1,
 h2,
 h3,
@@ -95,6 +100,7 @@ nav a.active {
 }
 
 @supports (-webkit-background-clip: text) or (background-clip: text) {
+
   nav a.active,
   .header__nav-icon:hover,
   .header__nav-icon:focus-within {
@@ -116,10 +122,11 @@ nav {
   height: 90vh;
 }
 
-#close ~ #header__nav {
+#close~#header__nav {
   transform: translateX(0);
 }
-#open ~ #header__nav {
+
+#open~#header__nav {
   transform: translateX(120vw);
 }
 
@@ -181,10 +188,12 @@ nav {
 .bouncing {
   animation: rubberband 800ms alternate ease-out;
 }
+
 .bouncing-op {
   animation: rubberband 1s alternate ease-out, op 1s ease-out;
   /* animation: ; */
 }
+
 .bouncy {
   display: inline-block;
 }
@@ -193,29 +202,37 @@ nav {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes rubberband {
   0% {
     transform: scaleX(1);
   }
+
   40% {
     transform: scaleX(1.12) scaleY(0.75);
   }
+
   55% {
     transform: scaleX(0.85) scaleY(1);
   }
+
   65% {
     transform: scaleX(1.09) scaleY(0.85);
   }
+
   75% {
     transform: scaleX(0.9) scaleY(1);
   }
+
   90% {
     transform: scaleX(1.05) scaleY(0.95);
   }
+
   100% {
     transform: scaleX(1) scaleY(1);
   }
@@ -253,6 +270,7 @@ nav {
 }
 
 @keyframes waviy {
+
   0%,
   40%,
   100% {
@@ -272,16 +290,20 @@ nav {
   .hamburger {
     scale: 0.9;
   }
+
   nav ul li {
     font-size: 1.7rem;
   }
+
   #open,
   #close {
     width: 3rem;
   }
+
   .navi-ul {
     width: 3rem;
   }
+
   .header {
     /* background-color: red; */
     width: 3rem;
